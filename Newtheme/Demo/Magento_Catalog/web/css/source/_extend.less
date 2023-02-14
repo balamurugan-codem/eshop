@@ -115,6 +115,7 @@ input[type="text"], input[type="password"], input[type="url"], input[type="tel"]
 }
 .custom-topbar ul {
     margin-bottom: 0;
+    padding: 0;
 }
 .custom-topbar ul li {
     list-style: none;
@@ -267,9 +268,56 @@ a.social-icons {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+
+    .custom-topbar ul li a {
+        padding: 0px 10px;
+    }
+    .nav-toggle {
+        top: 20px;
+        right: 15px;
+        left: unset !important;
+    }
+    .nav-toggle:before {
+        color: #FFFFFF;
+    }
+    .minicart-wrapper {
+        float: right;
+        margin-right: 40px;
+    }
+    .block-search {
+        margin-top: 16px;
+    }
+    .logo {
+        margin: 0 0 10px 0px;
+    }
+    .page-products .products-grid .product-item {
+        width: 50%;
+    }
+    .page-products .toolbar .limiter {
+        right: 0;
+        top: 0;
+    }
+    .client-logos .container {
+        display: block;
+        text-align: center;
+    }
+    .page-footer {
+        margin-top: 0;
+    }
+    .footer {
+        display: block;
+    }
     .footer-column {
-        width: 25%;
+        width: 100%;
         padding-right: 20px;
+        clear: both;
+    }
+    .footer-column.column-four {
+        padding-top: 10px !important;
+    }
+    .footer.content .links > li {
+        background: transparent;
+        border: none;
     }
 }
