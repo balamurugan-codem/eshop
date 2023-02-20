@@ -40,27 +40,80 @@ Enable Block -> Yes, Block Title -> Client Logo, Identifier -> client-logo, Stor
 
 ```
 <div class="client-logos">
- <div class="container">
   <div class="logos">
     <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
   </div>
-<div class="logos">
-    <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
+  <div class="logos">
+      <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
+    </div>
+  <div class="logos">
+      <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
+    </div>
+  <div class="logos">
+      <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
+    </div>
+  <div class="logos">
+      <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
+    </div>
+  <div class="logos">
+      <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
+    </div>
+  <div class="logos">
+      <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
+    </div>
+  <div class="logos">
+      <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
+    </div>
+  <div class="logos">
+      <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
+    </div>
+  <div class="logos">
+      <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
+    </div>
+  <div class="logos">
+      <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
+    </div>
+  <div class="logos">
+      <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
   </div>
-<div class="logos">
-    <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
-  </div>
-<div class="logos">
-    <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
-  </div>
-<div class="logos">
-    <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
-  </div>
-<div class="logos">
-    <img src="{{media url=wysiwyg/Client-logos/client-logo.png}}" alt="" />
-  </div>
- </div>
 </div>
+          <script>
+                requirejs( [ 'require', 'jquery', 'js/slick' ],
+                    function( require, $, slick ) {
+                        $('.client-logos').slick({
+                            infinite: true,
+                            speed: 300,
+                            slidesToShow: 7,
+                            prevArrow: $('.prev-slide'),
+                            nextArrow: $('.next-slide'),
+                            autoplay: true,
+                            slidesToScroll: 1,
+                           responsive: [
+                                {
+                                    breakpoint: 1024,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 1
+                                    }
+                                },
+                                {
+                                    breakpoint: 600,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 2
+                                    }
+                                },
+                                {
+                                    breakpoint: 480,
+                                    settings: {
+                                        slidesToShow: 2,
+                                        slidesToScroll: 2
+                                    }
+                                }
+                            ]
+                        });
+                    });
+            </script>
 ```
 ## 2. Create Widget
 Follow below settings,
